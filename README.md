@@ -1,0 +1,2 @@
+# figytravel
+GitHub Pages
