@@ -31,7 +31,8 @@
         "underlinedLinks": false,
         "isAnimatedOnScroll": false,
         "isScrollToTopButton": false
-      }
+      },
+      "additionalSetColors": []
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "5.9.18",
@@ -47,7 +48,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 5,
+    "uniqCompNum": 6,
     "versionPublish": "5.9.18"
   },
   "pages": {
@@ -930,13 +931,106 @@
           },
           "_name": "article02",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"start article2\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n\t\t<input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-12 col-lg-{{imageWidth}} image-wrapper\">\n\t\t\t\t<img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-1087x725.jpg\" alt=\"Mobirise Website Builder\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-md-12 col-lg\">\n\t\t\t\t<div class=\"text-wrapper align-left\">\n\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n\t\t\t\t\t\t<b>Connect, innovate, succeed</b>\n\t\t\t\t\t</h1>\n\t\t\t\t\t<p class=\"mbr-text align-left mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tWith a spirit of innovation, we navigate uncharted territories, exploring new ideas, technologies, and approaches. It is through our willingness to challenge conventions and think beyond boundaries that we discover innovative solutions that propel us forward.\n\t\t\t\t\t</p>\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t<a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Get started</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"start article2\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n\t\t<input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-12 col-md-12 col-lg-{{imageWidth}} image-wrapper\">\n\t\t\t\t<img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/mbr-1087x725.jpg\" alt=\"Mobirise Website Builder\">\n\t\t\t</div>\n\t\t\t<div class=\"col-12 col-md-12 col-lg\">\n\t\t\t\t<div class=\"text-wrapper align-left\">\n\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>FIGY Travel Foundation</b></h1>\n\t\t\t\t\t<p class=\"mbr-text align-left mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tAt FIGY Travel Foundation, we enable people from all walks of life to have the opportunity to make a positive life-changing impact in rural communities in the beautiful African country of Tanzania through volunteering vacations. Our volunteer programmes are the most affordable and sustainable way to immerse yourself in new cultures, connect with like-minded international volunteers and make a difference through work and travel.\n\t\t\t\t\t</p>\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t<a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Get started</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_cid": "uGUkMr5nN2",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
           "_anchor": "article02-2"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem",
+                "margin-bottom": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "header14",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header14\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<header>Wrap</header>\n\t\t<input type=\"range\" name=\"cardWidth\" title=\"Wrap Width\" min=\"6\" max=\"12\" value=\"8\" step=\"1\">\n\t\t<input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<header condition=\"bg.type === 'video'\">Fallback Image</header>\n\t\t<input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"card col-12 col-md-12 col-lg-{{cardWidth}}\">\n\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t<div class=\"card-box align-center\">\n\t\t\t\t\t\t<h1 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n\t\t\t\t\t\t\t<b>Connect with us</b></h1>\n\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\tJoin fellow international volunteers and make a positive impact on a unique and unforgettable trip.\n\t\t\t\t\t\t</p>\n\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n\t\t\t\t\t\t\t<a class=\"btn btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "uGVCusdvzX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header14-5"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            ".item-wrapper": {
+              "background": "#ffffff",
+              "padding": "2.25rem",
+              "margin": "0",
+              "margin-bottom": "2rem",
+              "@media (min-width: 992px) and (max-width: 1200px)": {
+                "padding": "1.5rem",
+                "margin-bottom": "2rem"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem",
+                "margin-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "people01",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people01\" group=\"People\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Main Title\" name=\"showmainTitle\" checked>\n    <input type=\"checkbox\" title=\"Main Text\" name=\"showmainText\" checked>\n    <input type=\"checkbox\" title=\"Main Buttons\" name=\"showmainButtons\" checked>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n      <div class=\"col-lg-5 mb-5\">\n        <h3 class=\"mbr-section-maintitle mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-maintitle\" mbr-if=\"showmainTitle\" mbr-theme-style=\"display-2\">\n          <b>Open roles</b>\n        </h3>\n        <p class=\"mbr-section-maintext mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-maintext, .btn-move\" mbr-if=\"showmainText\" mbr-theme-style=\"display-7\">\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent\n          vitae pellentesque. Integer aliquam.<br>\n        </p>\n\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn btn-move\" mbr-if=\"showmainButtons\">\n          <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n              more</strong></a>\n        </div>\n      </div>\n\n      <div class=\"col-lg-7\">\n        <div class=\"item features-without-image\">\n          <div class=\"item-wrapper\">\n            <div class=\"row align-items-center\">\n              <div class=\"col-md-7\">\n                <div class=\"align-left\">\n                  <h3 class=\"mbr-section-title mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">\n                    <b>Volunteer Agriculture</b></h3>\n                  <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">\n                    Lorem ipsum dolor sit amet consectetur.\n                  </h4>\n                  <p class=\"mbr-section-text mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                    Full-time<br>\n                  </p>\n                </div>\n              </div>\n\n              <div class=\"col-md-5\">\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\">\n                  <a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n                      more</strong></a>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"item features-without-image\">\n          <div class=\"item-wrapper\">\n            <div class=\"row align-items-center\">\n              <div class=\"col-md-7\">\n                <div class=\"align-left\">\n                  <h3 class=\"mbr-section-title mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">\n                    <b>Volunteer Teaching</b></h3>\n                  <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">\n                    Lorem ipsum dolor sit amet consectetur.\n                  </h4>\n                  <p class=\"mbr-section-text mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                    Full-time<br>\n                  </p>\n                </div>\n              </div>\n\n              <div class=\"col-md-5\">\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\">\n                  <a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n                      more</strong></a>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"item features-without-image\">\n          <div class=\"item-wrapper\">\n            <div class=\"row align-items-center\">\n              <div class=\"col-md-7\">\n                <div class=\"align-left\">\n                  <h3 class=\"mbr-section-title mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">\n                    <b>Volunteer Healthcare</b></h3>\n                  <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">\n                    Lorem ipsum dolor sit amet consectetur.\n                  </h4>\n                  <p class=\"mbr-section-text mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                    Full-time<br>\n                  </p>\n                </div>\n              </div>\n\n              <div class=\"col-md-5\">\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\">\n                  <a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n                      more</strong></a>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uGV1jMJDgN",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "people01-3"
         },
         {
           "alias": false,
@@ -1070,44 +1164,6 @@
           "_once": false,
           "_params": {},
           "_anchor": "social04-4"
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            ".item-wrapper": {
-              "background": "#ffffff",
-              "padding": "2.25rem",
-              "margin": "0",
-              "margin-bottom": "2rem",
-              "@media (min-width: 992px) and (max-width: 1200px)": {
-                "padding": "1.5rem",
-                "margin-bottom": "2rem"
-              },
-              "@media (max-width: 767px)": {
-                "padding": "1.5rem",
-                "margin-bottom": "1rem"
-              }
-            }
-          },
-          "_name": "people01",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people01\" group=\"People\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Main Title\" name=\"showmainTitle\" checked>\n    <input type=\"checkbox\" title=\"Main Text\" name=\"showmainText\" checked>\n    <input type=\"checkbox\" title=\"Main Buttons\" name=\"showmainButtons\" checked>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showsubTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n      <div class=\"col-lg-5 mb-5\">\n        <h3 class=\"mbr-section-maintitle mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-maintitle\" mbr-if=\"showmainTitle\" mbr-theme-style=\"display-2\">\n          <b>Open roles</b>\n        </h3>\n        <p class=\"mbr-section-maintext mbr-fonts-style mb-4\" data-app-selector=\".mbr-section-maintext, .btn-move\" mbr-if=\"showmainText\" mbr-theme-style=\"display-7\">\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent\n          vitae pellentesque. Integer aliquam.<br>\n        </p>\n\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn btn-move\" mbr-if=\"showmainButtons\">\n          <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n              more</strong></a>\n        </div>\n      </div>\n\n      <div class=\"col-lg-7\">\n        <div class=\"item features-without-image\">\n          <div class=\"item-wrapper\">\n            <div class=\"row align-items-center\">\n              <div class=\"col-md-7\">\n                <div class=\"align-left\">\n                  <h3 class=\"mbr-section-title mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">\n                    <b>Volunteer Agriculture</b></h3>\n                  <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">\n                    Lorem ipsum dolor sit amet consectetur.\n                  </h4>\n                  <p class=\"mbr-section-text mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                    Full-time<br>\n                  </p>\n                </div>\n              </div>\n\n              <div class=\"col-md-5\">\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\">\n                  <a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n                      more</strong></a>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"item features-without-image\">\n          <div class=\"item-wrapper\">\n            <div class=\"row align-items-center\">\n              <div class=\"col-md-7\">\n                <div class=\"align-left\">\n                  <h3 class=\"mbr-section-title mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">\n                    <b>Volunteer Teaching</b></h3>\n                  <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">\n                    Lorem ipsum dolor sit amet consectetur.\n                  </h4>\n                  <p class=\"mbr-section-text mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                    Full-time<br>\n                  </p>\n                </div>\n              </div>\n\n              <div class=\"col-md-5\">\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\">\n                  <a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n                      more</strong></a>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"item features-without-image\">\n          <div class=\"item-wrapper\">\n            <div class=\"row align-items-center\">\n              <div class=\"col-md-7\">\n                <div class=\"align-left\">\n                  <h3 class=\"mbr-section-title mbr-fonts-style mb-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-5\">\n                    <b>Volunteer Healthcare</b></h3>\n                  <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showsubTitle\" mbr-theme-style=\"display-7\">\n                    Lorem ipsum dolor sit amet consectetur.\n                  </h4>\n                  <p class=\"mbr-section-text mbr-fonts-style mb-0\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">\n                    Full-time<br>\n                  </p>\n                </div>\n              </div>\n\n              <div class=\"col-md-5\">\n                <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\">\n                  <a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"><strong>Read\n                      more</strong></a>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
-          "_cid": "uGV1jMJDgN",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "people01-3"
         }
       ]
     }
