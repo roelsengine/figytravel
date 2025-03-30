@@ -1588,9 +1588,99 @@ a {
 .cid-uGVDAF4Ic2 .tags-wrapper {
   color: #000000;
 }
-.cid-uGVE7ooRoe {
+.cid-uGVDrWGeUL {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-color: #edefeb;
+}
+.cid-uGVDrWGeUL .mbr-text {
+  color: #000000;
+}
+.cid-uGVDrWGeUL .mbr-section-subtitle {
+  color: #000000;
+}
+.cid-uGVDrWGeUL .mbr-section-title {
+  color: #000000;
+  text-align: center;
+}
+.cid-uGVDrWGeUL .mbr-text,
+.cid-uGVDrWGeUL .item .mbr-section-btn {
+  text-align: left;
+}
+.cid-uGVDrWGeUL .item-wrapper {
+  background: #ffffff;
+  margin-bottom: 2rem;
+  padding: 2.25rem;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-uGVDrWGeUL .item-wrapper {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-uGVDrWGeUL .item-wrapper {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+.cid-uGVDuBIyYz {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #edefeb;
+}
+.cid-uGVDuBIyYz .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uGVDuBIyYz .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uGVDuBIyYz .card-wrapper {
+  background: #ffffff;
+}
+@media (max-width: 767px) {
+  .cid-uGVDuBIyYz .card-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-uGVDuBIyYz .card-wrapper {
+    padding: 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-uGVDuBIyYz .card-wrapper {
+    padding: 4rem;
+  }
+}
+.cid-uGVDuBIyYz .mbr-text,
+.cid-uGVDuBIyYz .mbr-section-btn {
+  color: #000000;
+  text-align: left;
+}
+.cid-uGVDuBIyYz .card-title,
+.cid-uGVDuBIyYz .card-box {
+  text-align: left;
+  color: #000000;
+}
+.cid-uGVDuBIyYz .mbr-section-subtitle {
+  text-align: left;
+}
+.cid-uGVDuBIyYz .mbr-text {
+  text-align: left;
+}
+.cid-uGVDuBIyYz .mbr-card-title {
+  text-align: left;
+}
+.cid-uGVE7ooRoe {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   background-color: #000000;
 }
 .cid-uGVE7ooRoe .mbr-fallback-image.disabled {
@@ -1783,94 +1873,4 @@ a {
 .cid-uGVE7ooRoe .nav-wrapper,
 .cid-uGVE7ooRoe .social-wrapper {
   text-align: right;
-}
-.cid-uGVDrWGeUL {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #edefeb;
-}
-.cid-uGVDrWGeUL .mbr-text {
-  color: #000000;
-}
-.cid-uGVDrWGeUL .mbr-section-subtitle {
-  color: #000000;
-}
-.cid-uGVDrWGeUL .mbr-section-title {
-  color: #000000;
-  text-align: center;
-}
-.cid-uGVDrWGeUL .mbr-text,
-.cid-uGVDrWGeUL .item .mbr-section-btn {
-  text-align: left;
-}
-.cid-uGVDrWGeUL .item-wrapper {
-  background: #ffffff;
-  margin-bottom: 2rem;
-  padding: 2.25rem;
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .cid-uGVDrWGeUL .item-wrapper {
-    padding: 2rem 1.5rem;
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 767px) {
-  .cid-uGVDrWGeUL .item-wrapper {
-    padding: 2rem 1.5rem;
-    margin-bottom: 1rem;
-  }
-}
-.cid-uGVDuBIyYz {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #edefeb;
-}
-.cid-uGVDuBIyYz .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uGVDuBIyYz .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uGVDuBIyYz .card-wrapper {
-  background: #ffffff;
-}
-@media (max-width: 767px) {
-  .cid-uGVDuBIyYz .card-wrapper {
-    padding: 2rem 1.5rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cid-uGVDuBIyYz .card-wrapper {
-    padding: 2.25rem;
-  }
-}
-@media (min-width: 992px) {
-  .cid-uGVDuBIyYz .card-wrapper {
-    padding: 4rem;
-  }
-}
-.cid-uGVDuBIyYz .mbr-text,
-.cid-uGVDuBIyYz .mbr-section-btn {
-  color: #000000;
-  text-align: left;
-}
-.cid-uGVDuBIyYz .card-title,
-.cid-uGVDuBIyYz .card-box {
-  text-align: left;
-  color: #000000;
-}
-.cid-uGVDuBIyYz .mbr-section-subtitle {
-  text-align: left;
-}
-.cid-uGVDuBIyYz .mbr-text {
-  text-align: left;
-}
-.cid-uGVDuBIyYz .mbr-card-title {
-  text-align: left;
 }
