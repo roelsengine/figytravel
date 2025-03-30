@@ -1383,8 +1383,8 @@ a {
   text-align: center;
 }
 .cid-uGUkMr5nN2 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #ffffff;
 }
 .cid-uGUkMr5nN2 .mbr-fallback-image.disabled {
@@ -1423,6 +1423,52 @@ a {
 .cid-uGUkMr5nN2 .mbr-text,
 .cid-uGUkMr5nN2 .mbr-section-btn {
   color: #000000;
+}
+.cid-uGVzwvBXgO {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+}
+.cid-uGVzwvBXgO .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uGVzwvBXgO .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uGVzwvBXgO .bg-facebook {
+  background: #1778f2;
+  color: #ffffff;
+}
+.cid-uGVzwvBXgO .bg-facebook:hover {
+  background: #0b60cb;
+}
+.cid-uGVzwvBXgO .bg-instagram {
+  background: #f00075;
+  color: #ffffff;
+}
+.cid-uGVzwvBXgO .bg-instagram:hover {
+  background: #bd005c;
+}
+.cid-uGVzwvBXgO .iconfont-wrapper {
+  display: inline-block;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.cid-uGVzwvBXgO [class^="socicon-"]:before,
+.cid-uGVzwvBXgO [class*=" socicon-"]:before {
+  line-height: 55px;
+  padding: .6rem;
 }
 .cid-uGV1jMJDgN {
   padding-top: 5rem;
