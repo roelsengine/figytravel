@@ -1918,6 +1918,124 @@ a {
 .cid-uGVNRMDh5u .content-head {
   max-width: 800px;
 }
+.cid-uHdVR8WhAn {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-uHdVR8WhAn .mbr-text {
+  color: #000000;
+}
+.cid-uHdVR8WhAn .mbr-section-subtitle {
+  color: #000000;
+  text-align: center;
+}
+.cid-uHdVR8WhAn .mbr-section-title {
+  color: #000000;
+  text-align: center;
+}
+.cid-uHdVR8WhAn .img-wrapper img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4rem !important;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-uHdVR8WhAn .img-wrapper img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.cid-uHdVR8WhAn p {
+  line-height: 1.3;
+}
+.cid-uHdVR8WhAn .mbr-iconfont {
+  font-size: 5rem;
+  color: #64ff00;
+  opacity: 0.2;
+}
+@media (max-width: 992px) {
+  .cid-uHdVR8WhAn .mbr-iconfont {
+    display: none;
+  }
+}
+.cid-uHdVR8WhAn .wrapper {
+  position: relative;
+}
+.cid-uHdVR8WhAn .wrapper .icon1 {
+  position: absolute;
+  left: -100px;
+  top: -60px;
+}
+.cid-uHdVR8WhAn .wrapper .icon2 {
+  position: absolute;
+  right: -100px;
+  bottom: -30px;
+}
+.cid-uHdVR8WhAn .img-wrapper {
+  display: flex;
+}
+.cid-uHdVR8WhAn .card-text {
+  text-align: center;
+}
+.cid-uHdVR8WhAn .card-title,
+.cid-uHdVR8WhAn .img-wrapper {
+  text-align: center;
+  color: #f0466a;
+}
+.cid-uHdW82mIdX {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #e5f1f2;
+}
+.cid-uHdW82mIdX .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uHdW82mIdX .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uHdW82mIdX img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50% !important;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+.cid-uHdW82mIdX .mbr-iconfont {
+  margin: auto;
+  display: inline-flex;
+  font-size: 1.5rem;
+  color: #ca9236;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.cid-uHdW82mIdX .card-title,
+.cid-uHdW82mIdX .iconfont-wrapper {
+  color: #232323;
+}
+.cid-uHdW82mIdX .card-text {
+  color: #232323;
+}
+.cid-uHdW82mIdX .mbr-section-title {
+  color: #4e423d;
+}
+.cid-uHdW82mIdX .mbr-section-subtitle {
+  color: #232323;
+}
+.cid-uHdW82mIdX .content-head {
+  max-width: 800px;
+}
+.cid-uHdW82mIdX .card-subtitle {
+  color: #a1a1a1;
+}
 .cid-uGVDrWGeUL {
   padding-top: 5rem;
   padding-bottom: 5rem;
