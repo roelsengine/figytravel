@@ -3404,8 +3404,8 @@ a {
   color: #272727;
 }
 .cid-uHe6NzqJFf {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-uHe6NzqJFf .mbr-text {
@@ -3511,7 +3511,7 @@ a {
 .cid-uHe6NzqJFf .mbr-iconfont {
   display: block;
   font-size: 28px;
-  color: #3f37c9;
+  color: #ffeb69;
 }
 .cid-uHe6NzqJFf .iconfont-wrapper {
   margin-bottom: 40px;
@@ -3531,9 +3531,7 @@ a {
   }
 }
 .cid-uHe6YMdAkr {
-  padding-top: 6rem;
-  padding-bottom: 3rem;
-  background-color: #000000;
+  background-color: #3a341c;
 }
 .cid-uHe6YMdAkr .row {
   flex-direction: row-reverse;
@@ -3608,6 +3606,7 @@ a {
 .cid-uHe6YMdAkr .mbr-text,
 .cid-uHe6YMdAkr .mbr-section-btn {
   text-align: left;
+  color: #ffffff;
 }
 .cid-uHe6YMdAkr H3 {
   text-align: left;
@@ -3620,14 +3619,14 @@ a {
   color: #9A948D;
 }
 .cid-uHe6YMdAkr .mbr-iconfont {
-  left: 10%;
-  top: -45%;
   position: absolute;
   font-size: 35px;
   border-radius: 50%;
   color: #ffffff;
   border: 1px solid #41392e;
   padding: 4rem;
+  left: 10%;
+  top: -45%;
 }
 @media (max-width: 991px) {
   .cid-uHe6YMdAkr .mbr-iconfont {
