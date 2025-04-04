@@ -61,7 +61,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 98,
+    "uniqCompNum": 101,
     "versionPublish": "5.9.18",
     "screenshot": "screenshot.png"
   },
@@ -826,6 +826,228 @@
           "_params": {}
         },
         {
+          "_name": "slider1",
+          "_sourceTheme": "directm4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider1 directm4_slider1\" group=\"Headers\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n\t<mbr-parameters>\n\t\t<input type=\"id\" name=\"sliderId\">\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\"\n\t\t\tcondition=\"!fullScreen\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\"\n\t\t\tcondition=\"!fullScreen\">\n\t\t<input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"1\" max=\"12\" step=\"1\" value=\"10\"\n\t\t\tcondition=\"!fullScreen\">\n\t\t<header>Carousel</header>\n\t\t<input type=\"checkbox\" title=\"Fade Effect\" name=\"fade\" checked>\n\t\t<input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\">\n\t\t<input type=\"range\" title=\"Interval\" name=\"interval\" min=\"3\" max=\"10\" value=\"5\" step=\"1\" condition=\"autoplay\">\n\t\t<input type=\"color\" title=\"Indicators\" name=\"indicatorsColor\" value=\"#e5e5e5\" selected>\n\t\t<input type=\"color\" title=\"Active Indicator\" name=\"activeIndicatorColor\" value=\"#5aac98\" selected>\n\t\t<header>Slide</header>\n\t\t<input type=\"checkbox\" title=\"Caption\" name=\"showCaption\" checked>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Link\" name=\"showLink\" condition=\"showButtons\" checked>\n\t\t<input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"fullScreen\" checked>\n\t\t<select title=\"Buttons Align\" name=\"buttonsAlign\">\n\t\t\t<option value>Left</option>\n\t\t\t<option value=\"justify-content-center\" selected>Center</option>\n\t\t\t<option value=\"justify-content-end\">Right</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#eeeeee\" selected>\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div id={{sliderId}} class=\"carousel slide\" mbr-class=\"{'carousel-fade': fade}\"\n\t\t\tdata-ride=\"{{autoplay ? 'carousel' : false}}\" data-bs-ride=\"{{autoplay ? 'carousel' : false}}\" data-interval=\"{{interval*1000}}\" data-bs-interval=\"{{interval*1000}}\">\n\t\t\t<ol class=\"carousel-indicators\">\n\t\t\t\t<li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"0\" data-bs-slide-to=\"0\" class=\"active\"></li>\n\t\t\t\t<li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"1\" data-bs-slide-to=\"1\"></li>\n\t\t\t\t<li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"2\" data-bs-slide-to=\"2\"></li>\n\t\t\t\t<li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"3\" data-bs-slide-to=\"3\"></li>\n\t\t\t\t<li data-target=\"#{{sliderId}}\" data-bs-target=\"#{{sliderId}}\" data-slide-to=\"4\" data-bs-slide-to=\"4\"></li>\n\t\t\t</ol>\n\t\t\t<div class=\"carousel-inner\">\n\t\t\t\t<div class=\"carousel-item slider-image item active\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@ADDONS_PATH@/directm4/components/_images/slider/slider01.jpg\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\"\n\t\t\t\t\t\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"carousel-caption\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-{{contentWidth}}\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showTitle\">FULL SCREEN SLIDER</h1>\n\t\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showSubitle\">\n\t\t\t\t\t\t\t\t\t\tHeader Subtitle\n\t\t\t\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\t\t\t\tChoose from the large selection of latest pre-made blocks - jumbotrons, hero\n\t\t\t\t\t\t\t\t\t\timages,\n\t\t\t\t\t\t\t\t\t\tparallax scrolling, video backgrounds, hamburger menu, sticky header and more.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-wrap d-flex align-left {{buttonsAlign}} align-self-center\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-app-placeholder=\"Type Text\">Download for Windows</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"mbr-section-btn link align-self-center\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline my-auto ml-md-4 ml-0\"\n\t\t\t\t\t\t\t\t\t\t\t\thref=\"https://mobirise.co\" data-app-placeholder=\"Type Text\"\n\t\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">Or View\n\t\t\t\t\t\t\t\t\t\t\t\tDemo</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@ADDONS_PATH@/directm4/components/_images/slider/slider02.jpg\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\"\n\t\t\t\t\t\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"carousel-caption\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-{{contentWidth}}\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showTitle\">FULL SCREEN SLIDER</h1>\n\t\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showSubitle\">\n\t\t\t\t\t\t\t\t\t\tHeader Subtitle\n\t\t\t\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\t\t\t\tChoose from the large selection of latest pre-made blocks - jumbotrons, hero\n\t\t\t\t\t\t\t\t\t\timages,\n\t\t\t\t\t\t\t\t\t\tparallax scrolling, video backgrounds, hamburger menu, sticky header and more.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-wrap d-flex align-left {{buttonsAlign}} align-self-center\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-app-placeholder=\"Type Text\">Download for Windows</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"mbr-section-btn link align-self-center\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline my-auto ml-md-4 ml-0\"\n\t\t\t\t\t\t\t\t\t\t\t\thref=\"https://mobirise.co\" data-app-placeholder=\"Type Text\"\n\t\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">Or View\n\t\t\t\t\t\t\t\t\t\t\t\tDemo</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@ADDONS_PATH@/directm4/components/_images/slider/slider03.jpg\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\"\n\t\t\t\t\t\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"carousel-caption\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-{{contentWidth}}\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showTitle\">FULL SCREEN SLIDER</h1>\n\t\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showSubitle\">\n\t\t\t\t\t\t\t\t\t\tHeader Subtitle\n\t\t\t\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\t\t\t\tChoose from the large selection of latest pre-made blocks - jumbotrons, hero\n\t\t\t\t\t\t\t\t\t\timages,\n\t\t\t\t\t\t\t\t\t\tparallax scrolling, video backgrounds, hamburger menu, sticky header and more.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-wrap d-flex align-left {{buttonsAlign}} align-self-center\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-app-placeholder=\"Type Text\">Download for Windows</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"mbr-section-btn link align-self-center\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline my-auto ml-md-4 ml-0\"\n\t\t\t\t\t\t\t\t\t\t\t\thref=\"https://mobirise.co\" data-app-placeholder=\"Type Text\"\n\t\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">Or View\n\t\t\t\t\t\t\t\t\t\t\t\tDemo</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@ADDONS_PATH@/directm4/components/_images/slider/slider04.jpg\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\"\n\t\t\t\t\t\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"carousel-caption\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-{{contentWidth}}\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showTitle\">FULL SCREEN SLIDER</h1>\n\t\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showSubitle\">\n\t\t\t\t\t\t\t\t\t\tHeader Subtitle\n\t\t\t\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\t\t\t\tChoose from the large selection of latest pre-made blocks - jumbotrons, hero\n\t\t\t\t\t\t\t\t\t\timages,\n\t\t\t\t\t\t\t\t\t\tparallax scrolling, video backgrounds, hamburger menu, sticky header and more.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-wrap d-flex align-left {{buttonsAlign}} align-self-center\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-app-placeholder=\"Type Text\">Download for Windows</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"mbr-section-btn link align-self-center\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline my-auto ml-md-4 ml-0\"\n\t\t\t\t\t\t\t\t\t\t\t\thref=\"https://mobirise.co\" data-app-placeholder=\"Type Text\"\n\t\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">Or View\n\t\t\t\t\t\t\t\t\t\t\t\tDemo</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@ADDONS_PATH@/directm4/components/_images/slider/slider05.jpg\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\"\n\t\t\t\t\t\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"carousel-caption\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center\">\n\t\t\t\t\t\t\t\t<div class=\"col-md-{{contentWidth}}\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showTitle\">FULL SCREEN SLIDER</h1>\n\t\t\t\t\t\t\t\t\t<h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3 mbr-white\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showSubitle\">\n\t\t\t\t\t\t\t\t\t\tHeader Subtitle\n\t\t\t\t\t\t\t\t\t</h2>\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\t\t\t\t\t\tChoose from the large selection of latest pre-made blocks - jumbotrons, hero\n\t\t\t\t\t\t\t\t\t\timages,\n\t\t\t\t\t\t\t\t\t\tparallax scrolling, video backgrounds, hamburger menu, sticky header and more.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t<div class=\"buttons-wrap d-flex align-left {{buttonsAlign}} align-self-center\"\n\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\"\n\t\t\t\t\t\t\t\t\t\t\t\tdata-app-placeholder=\"Type Text\">Download for Windows</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\t\tclass=\"mbr-section-btn link align-self-center\"\n\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"btn btn-md btn-white-outline my-auto ml-md-4 ml-0\"\n\t\t\t\t\t\t\t\t\t\t\t\thref=\"https://mobirise.co\" data-app-placeholder=\"Type Text\"\n\t\t\t\t\t\t\t\t\t\t\t\tmbr-if=\"showLink && showButtons\">Or View\n\t\t\t\t\t\t\t\t\t\t\t\tDemo</a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<a class=\"carousel-control carousel-control-prev\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"prev\" data-bs-slide=\"prev\">\n\t\t\t\t<span class=\"mbri-left\" aria-hidden=\"true\"></span>\n\t\t\t\t<span class=\"sr-only visually-hidden\">Previous</span>\n\t\t\t</a>\n\t\t\t<a class=\"carousel-control carousel-control-next\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"next\" data-bs-slide=\"next\">\n\t\t\t\t<span class=\"mbri-right\" aria-hidden=\"true\"></span>\n\t\t\t\t<span class=\"sr-only visually-hidden\">Next</span>\n\t\t\t</a>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)",
+              ".carousel": {
+                "height": "800px",
+                "img": {
+                  "width": "100%",
+                  "height": "100%",
+                  "-o-object-fit": "cover",
+                  "object-fit": "cover"
+                }
+              },
+              ".carousel-item, .carousel-inner": {
+                "height": "100%"
+              }
+            },
+            "& when (@fullScreen)": {
+              "padding-top": "0",
+              "padding-bottom": "0",
+              ".carousel": {
+                "width": "100%"
+              },
+              ".carousel-inner": {
+                "display": "flex",
+                "align-content": "center",
+                "align-items": "center"
+              },
+              ".carousel-item img": {
+                "height": "100vh",
+                "-o-object-fit": "cover",
+                "object-fit": "cover"
+              }
+            },
+            "background-color": "@bgColor",
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "-webkit-flex",
+              "align-items": "center",
+              "transform": "translateY(-50%)",
+              "-webkit-align-items": "center",
+              "padding-left": "120px",
+              "padding-right": "120px",
+              "justify-content": "center"
+            },
+            ".mobi-mbri-arrow-next": {
+              "margin-left": "5px"
+            },
+            ".mobi-mbri-arrow-prev": {
+              "margin-right": "5px"
+            },
+            ".carousel-control:hover": {
+              "color": "#fff",
+              "opacity": "1"
+            },
+            ".item-wrapper": {
+              "width": "100%"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              },
+              ".content-slider-wrap": {
+                "width": "100% !important"
+              }
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-control": {
+              "top": "50%",
+              "width": "60px",
+              "height": "60px",
+              "margin-top": "-1.5rem",
+              "font-size": "40px",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "opacity": ".8",
+              "&.carousel-control-prev": {
+                "left": "0",
+                "margin-left": "2.5rem"
+              },
+              "&.carousel-control-next": {
+                "right": "0",
+                "margin-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "top": "auto",
+                "bottom": "1rem"
+              }
+            },
+            ".carousel-indicators": {
+              "position": "absolute",
+              "bottom": "0",
+              "margin-bottom": "1.5rem !important",
+              "li": {
+                "max-width": "15px",
+                "height": "15px",
+                "width": "15px",
+                "max-height": "15px",
+                "margin": "3px",
+                "background-color": "@indicatorsColor",
+                "border": "0px solid transparent",
+                "border-radius": "50%",
+                "opacity": "1",
+                "transition": "all 0.3s",
+                "&.active": {
+                  "background-color": "@activeIndicatorColor"
+                },
+                "&.active, &:hover": {
+                  "opacity": "0.9"
+                },
+                "&::after, &::before": {
+                  "content": "none"
+                }
+              },
+              "&.ie-fix": {
+                "left": "50%",
+                "display": "block",
+                "width": "60%",
+                "margin-left": "-30%",
+                "text-align": "center"
+              },
+              "@media (max-width: 768px)": {
+                "display": "none !important"
+              }
+            },
+            ".btn": {
+              "&.btn-primary-outline": {
+                "border": "1px solid @primaryColor",
+                "&:hover": {
+                  "background-color": "@primaryColor !important",
+                  "color": "#ffffff !important"
+                }
+              },
+              "&.btn-secondary-outline": {
+                "border": "1px solid @secondaryColor",
+                "&:hover": {
+                  "background-color": "@secondaryColor !important",
+                  "color": "#ffffff !important"
+                }
+              },
+              "&.btn-success-outline": {
+                "border": "1px solid @successColor",
+                "&:hover": {
+                  "background-color": "@successColor !important",
+                  "color": "#ffffff !important"
+                }
+              },
+              "&.btn-info-outline": {
+                "border": "1px solid @infoColor",
+                "&:hover": {
+                  "background-color": "@infoColor !important",
+                  "color": "#ffffff !important"
+                }
+              },
+              "&.btn-warning-outline": {
+                "border": "1px solid @warningColor",
+                "&:hover": {
+                  "background-color": "@warningColor !important",
+                  "color": "#ffffff !important"
+                }
+              },
+              "&.btn-danger-outline": {
+                "border": "1px solid @dangerColor",
+                "&:hover": {
+                  "background-color": "@dangerColor !important",
+                  "color": "#ffffff !important"
+                }
+              },
+              "&.btn-black-outline": {
+                "border": "1px solid #000000",
+                "&:hover": {
+                  "background-color": "#000000 !important",
+                  "color": "#ffffff !important"
+                }
+              },
+              "&.btn-white-outline": {
+                "border": "1px solid #ffffff",
+                "&:hover": {
+                  "background-color": "#ffffff !important",
+                  "color": "#000000 !important"
+                }
+              }
+            },
+            ".container-fluid": {
+              "padding-left": "0",
+              "padding-right": "0"
+            },
+            "@media (max-width: 768px)": {
+              ".carousel-caption": {
+                "padding-left": "15px",
+                "padding-right": "15px"
+              },
+              ".carousel-control": {
+                "display": "none"
+              },
+              ".buttons-wrap": {
+                "flex-wrap": "wrap",
+                "flex-direction": "column",
+                "justify-content": "center",
+                ".mbr-section-btn": {
+                  "text-align": "center",
+                  "margin-bottom": "10px"
+                }
+              }
+            }
+          },
+          "_cid": "uHoY56qXW5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "slider1-2q"
+        },
+        {
           "alias": false,
           "_styles": {
             "display": "flex",
@@ -890,204 +1112,653 @@
         },
         {
           "_name": "slider01",
-          "_sourceTheme": "progressm5",
-          "_customHTML": "<section data-bs-version=\"5.1\"\n        class=\"slider01 mbr-embla progressm5\"\n        group=\"Gallery & Slider\"\n        plugins=\"embla\"\n        mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\"\n>\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\"/>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\"/>\n        <input\n                type=\"range\"\n                inline\n                title=\"Top\"\n                name=\"paddingTop\"\n                min=\"0\"\n                max=\"10\"\n                step=\"1\"\n                value=\"5\"\n        />\n        <input\n                type=\"range\"\n                inline\n                title=\"Bottom\"\n                name=\"paddingBottom\"\n                min=\"0\"\n                max=\"10\"\n                step=\"1\"\n                value=\"5\"\n        />\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\"/>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" name=\"showTitle\" title=\"Title\" checked/>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked/>\n        <header>Carousel</header>\n        <input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\"/>\n        <input\n                type=\"range\"\n                title=\"Interval\"\n                name=\"interval\"\n                min=\"1\"\n                max=\"10\"\n                value=\"4\"\n                step=\"1\"\n                condition=\"autoplay\"\n        />\n        <input type=\"checkbox\" title=\"Loop\" name=\"loop\" checked/>\n        <input type=\"checkbox\" title=\"Draggable\" name=\"draggable\" checked/>\n        <input type=\"checkbox\" name=\"arrows\" title=\"Arrows\" checked/>\n        <input\n                type=\"checkbox\"\n                name=\"arrowsMobile\"\n                title=\"Mobile Arrows\"\n                condition=\"arrows\"\n                checked\n        />\n        <input type=\"color\" name=\"arrowsBg\" title=\"Arrows BG\" value=\"#252525\" condition=\"arrows\"/>\n        <input type=\"color\" name=\"arrowsColor\" title=\"Arrows Color\" value=\"#ffffff\" condition=\"arrows\"/>\n        <header>Cards</header>\n        <input\n                type=\"range\"\n                name=\"gap\"\n                title=\"Gap\"\n                min=\"0\"\n                max=\"10\"\n                step=\"1\"\n                value=\"1\"\n        />\n        <input type=\"checkbox\" name=\"showCardTitle\" title=\"Card Title\" checked/>\n        <input type=\"color\" name=\"border\" title=\"Card Border\" value=\"#078efb\"/>\n        <input type=\"color\" name=\"shadow\" title=\"Card Shadow\" value=\"#060606\"/>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax required>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/progressm5/components/_images/background1.jpg\"/>\n            <input type=\"color\" title=\"Color\" value=\"#060606\" selected/>\n        </fieldset>\n        <input\n                type=\"checkbox\"\n                title=\"Overlay\"\n                name=\"overlay\"\n                condition=\"bg.type !== 'color'\"\n                checked\n        />\n        <input\n                type=\"color\"\n                title=\"Overlay Color\"\n                name=\"overlayColor\"\n                value=\"#060606\"\n                condition=\"overlay && bg.type == 'image'\"\n        />\n        <input\n                type=\"range\"\n                inline\n                title=\"Opacity\"\n                name=\"overlayOpacity\"\n                min=\"0\"\n                max=\"1\"\n                step=\"0.1\"\n                value=\"0.1\"\n                condition=\"overlay && bg.type == 'image'\"\n        />\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <div class=\"title-wrapper\" mbr-if=\"showTitle || showText\">\n                        <h2 class=\"mbr-section-title mbr-fonts-style\"\n                            data-app-selector=\".mbr-section-title\"\n                            mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                            Main functions\n                        </h2>\n                        <div class=\"text-wrapper\">\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\"\n                               mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\">\n                                Virtual assistants (VAs) are AI-powered tools designed to assist users with a wide range\n                                of tasks, enhancing productivity, efficiency, and convenience.\n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"slider-wrapper\">\n                        <div\n                                class=\"embla\"\n                                data-loop=\"{{loop}}\"\n                                data-auto-play=\"{{autoplay}}\"\n                                data-auto-play-interval=\"{{interval}}\"\n                                data-draggable=\"{{draggable}}\"\n                                data-skip-snaps=\"true\"\n                                data-align=\"center\"\n                                data-contain-scroll=\"trimSnaps\"\n                        >\n                            <div class=\"embla__viewport\">\n                                <div class=\"embla__container\">\n                                    <div class=\"embla__slide slider-image item\"\n                                         mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                        <div class=\"slide-content\">\n                                            <div class=\"item-wrapper\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n                                                <div class=\"item-content\">\n                                                    <h4 class=\"item-title mbr-fonts-style\"\n                                                        mbr-theme-style=\"display-5\"\n                                                        data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                                        They help users create and manage task lists, ensuring deadlines\n                                                        are met and tasks.\n                                                    </h4>\n                                                </div>\n                                                <div class=\"item-img\">\n                                                    <div class=\"item-wrap item-number\">\n                                                        <img src=\"@ADDONS_PATH@/progressm5/components/_images/progress/image5.jpg\"\n                                                             alt=\"Mobirise Website Builder\"/>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"embla__slide slider-image item\"\n                                         mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                        <div class=\"slide-content\">\n                                            <div class=\"item-wrapper\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n                                                <div class=\"item-content\">\n                                                    <h4 class=\"item-title mbr-fonts-style\"\n                                                        mbr-theme-style=\"display-5\"\n                                                        data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                                        They can send and receive text messages or instant messages, and\n                                                        sometimes even engage.\n                                                    </h4>\n                                                </div>\n                                                <div class=\"item-img\">\n                                                    <div class=\"item-wrap item-number\">\n                                                        <img src=\"@ADDONS_PATH@/progressm5/components/_images/progress/image19.jpg\"\n                                                             alt=\"Mobirise Website Builder\"/>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                    <div class=\"embla__slide slider-image item\"\n                                         mbr-style=\"{'margin-left': gap + 'rem', 'margin-right': gap + 'rem'}\">\n                                        <div class=\"slide-content\">\n                                            <div class=\"item-wrapper\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n                                                <div class=\"item-content\">\n                                                    <h4 class=\"item-title mbr-fonts-style\"\n                                                        mbr-theme-style=\"display-5\"\n                                                        data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                                        They can retrieve information from databases, documents, and\n                                                        other resources as requested.\n                                                    </h4>\n                                                </div>\n                                                <div class=\"item-img\">\n                                                    <div class=\"item-wrap item-number\">\n                                                        <img src=\"@ADDONS_PATH@/progressm5/components/_images/progress/image12.jpg\"\n                                                             alt=\"Mobirise Website Builder\"/>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <button class=\"embla__button embla__button--prev\">\n                                <span class=\"mobi-mbri mobi-mbri-left mbr-iconfont\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only visually-hidden visually-hidden visually-hidden\">Previous</span>\n                            </button>\n                            <button class=\"embla__button embla__button--next\">\n                                <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\" aria-hidden=\"true\"></span>\n                                <span class=\"sr-only visually-hidden visually-hidden visually-hidden\">Next</span>\n                            </button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_sourceTheme": "techm4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"carousel slide\" group=\"Sliders &amp; Gallery\"\n    plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe,mobirise-icons2\" data-interval=\"false\" data-bs-interval=\"false\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded=\"\"></div>\n\n</section>",
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
+            ".modal-body .close": {
+              "background": "#1b1b1b"
             },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
+            ".modal-body .close span": {
+              "font-style": "normal"
             },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              }
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "table"
             },
-            ".title-wrapper": {
-              "margin-bottom": "60px",
-              "@media (max-width: 992px)": {
-                "margin-bottom": "48px"
-              },
-              ".mbr-section-title": {
-                "margin-bottom": "24px"
-              },
-              ".text-wrapper": {
-                ".mbr-text": {
-                  "display": "inline-block",
-                  "width": "50%",
-                  "margin-bottom": "0",
-                  "@media (max-width: 992px)": {
-                    "width": "100%"
-                  }
-                }
-              }
+            ".mbr-iconfont": {
+              "font-family": "'Moririse2' !important"
             },
-            ".embla__slide": {
-              "display": "flex",
-              "justify-content": "center",
-              "position": "relative",
-              "min-width": "100%",
-              "max-width": "100%",
-              "@media (max-width: 767px)": {
-                "min-width": "100%",
-                "max-width": "100%"
-              },
-              ".slide-content": {
-                "width": "100%",
-                ".item-wrapper": {
-                  "display": "flex",
-                  "align-items": "center",
-                  "@media (max-width: 992px)": {
-                    "display": "block"
-                  },
-                  ".item-content": {
-                    "width": "40%",
-                    "padding-right": "90px",
-                    "position": "relative",
-                    "z-index": "1",
-                    "@media (max-width: 992px)": {
-                      "width": "100%",
-                      "padding-right": "0"
-                    },
-                    "& when (@reverseContent)": {
-                      "padding-right": "0",
-                      "padding-left": "90px",
-                      "@media (max-width: 992px)": {
-                        "padding-left": "0"
-                      }
-                    },
-                    ".item-title": {
-                      "margin-bottom": "0",
-                      "@media (max-width: 992px)": {
-                        "margin-bottom": "36px"
-                      }
-                    }
-                  },
-                  ".item-img": {
-                    "position": "relative",
-                    "width": "60%",
-                    "@media (max-width: 992px)": {
-                      "width": "100%"
-                    },
-                    "&:before": {
-                      "content": "''",
-                      "width": "100%",
-                      "height": "30%",
-                      "position": "absolute",
-                      "bottom": "-1px",
-                      "left": "0",
-                      "background-image": "linear-gradient(0deg, @shadow 40%, transparent 98%)"
-                    },
-                    ".item-wrap": {
-                      "padding": "12px",
-                      "border": "2px solid @border",
-                      "@media (max-width: 992px)": {
-                        "padding": "16px"
-                      },
-                      "img": {
-                        "height": "360px",
-                        "width": "100%",
-                        "object-fit": "cover",
-                        "@media (max-width: 992px)": {
-                          "height": "300px"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+            ".mbri-right:before": {
+              "content": "\"\\e909\"",
+              "font-weight": "900",
+              "padding-left": "5px"
             },
-            ".embla__button--next, .embla__button--prev": {
-              "display": "flex"
+            ".mbri-left:before": {
+              "content": "\"\\e90a\"",
+              "font-weight": "900",
+              "padding-right": "5px"
             },
-            ".embla__button": {
-              "bottom": "50%",
-              "width": "48px",
-              "height": "48px",
-              "font-size": "24px",
-              "background-color": "@arrowsBg !important",
-              "color": "@arrowsColor !important",
-              "border": "none !important",
-              "border-radius": "50%",
-              "transition": "all 0.3s",
-              "position": "absolute",
-              "display": "flex",
-              "justify-content": "center",
-              "align-items": "center",
-              "opacity": "1 !important",
-              "@media (max-width: 992px)": {
-                "bottom": "0"
-              },
-              "& when not (@arrows)": {
-                "display": "none"
-              },
-              "& when not (@arrowsMobile)": {
-                "@media (max-width: 768px)": {
-                  "display": "none"
-                }
-              },
+            ".carousel-control, .carousel-indicators li": {
+              "background-color": "@primaryColor !important",
+              "opacity": "0.7!important",
+              "border": "none",
               "&:hover": {
-                "transform": "scale(1.05)"
+                "transform": "scale(1.1)",
+                "opacity": "1!important"
               },
-              "&.embla__button--prev": {
-                "left": "0"
-              },
-              "&.embla__button--next": {
-                "right": "0"
+              ".active": {
+                "transform": "scale(1.1)",
+                "opacity": "1!important"
               }
             },
-            ".embla": {
+            ".carousel-indicators .active": {
+              "transform": "scale(1.1)",
+              "opacity": "1!important"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            ".col-10": {
+              "max-width": "900px",
+              "margin": "auto"
+            },
+            "@media (max-width: 992px)": {
+              ".col-10": {
+                "max-width": "500px"
+              }
+            },
+            "@media (max-width: 576px)": {
+              ".carousel-control": {
+                "width": "40px!important",
+                "height": "40px!important"
+              },
+              ".mbr-iconfont": {
+                "font-size": "1rem!important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".boxed-slider": {
               "position": "relative",
-              "padding": "0 12%",
-              "@media (max-width: 992px)": {
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "-webkit-flex",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "-webkit-align-items": "center"
+            },
+            ".container-slide.container": {
+              "min-width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "-o-transition": "-o-transform 0.6s ease-in-out",
+              "-webkit-transition": "-webkit-transform 0.6s ease-in-out",
+              "transition": "transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out",
+              "-webkit-backface-visibility": "hidden",
+              "backface-visibility": "hidden",
+              "-webkit-perspective": "1000px",
+              "perspective": "1000px",
+              ".container": {
+                "@media (max-width: 576px)": {
+                  "width": "100%"
+                }
+              }
+            },
+            ".carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right": {
+              "-webkit-transform": "translate3d(0, 0, 0)",
+              "transform": "translate3d(0, 0, 0)"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "60px",
+                "height": "60px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "2rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "20px",
+                  "width": "20px",
+                  "height": "20px",
+                  "max-height": "20px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "0px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
                 "padding": "0"
               }
             },
-            ".embla__viewport": {
-              "overflow": "hidden",
-              "width": "100%",
-              "margin-right": "1rem"
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "width": "auto",
+              "min-height": "0"
             },
-            ".embla__viewport.is-draggable": {
-              "cursor": "grab"
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
             },
-            ".embla__viewport.is-dragging": {
-              "cursor": "grabbing"
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
             },
-            ".embla__container": {
-              "display": "flex",
-              "user-select": "none",
-              "-webkit-touch-callout": "none",
-              "-khtml-user-select": "none",
-              "-webkit-tap-highlight-color": "transparent"
-            },
-            ".item-menu-overlay": {
-              "opacity": "0 !important"
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff",
-              "text-align": "center"
-            },
-            ".mbr-text, .text-wrapper": {
-              "color": "#9aa0a6",
-              "text-align": "center"
-            },
-            ".item-title": {
-              "color": "#ffffff"
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
             }
           },
-          "_cid": "uHegLgbLLT",
-          "_protectedParams": [],
+          "_cid": "uHoYviI2AB",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "slider01-u"
+          "_params": {
+            "slides__autoplay": "false",
+            "slides__autoplayInterval": 4000,
+            "slides__showBullets": true,
+            "slides": [
+              {
+                "image": "@ADDONS_PATH@/techm4/components/_images/background1.jpg",
+                "active": true,
+                "showButtons": true,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "alt": "",
+                "title": "",
+                "textTitle": "SLIDER Volledig scherm",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "Kies uit de grote selectie aan kant en klaar blocks - jumbotrons, hero afbeeldingen, parallax scrolling, video, achtergronden, hamburger menu enz...",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+              },
+              {
+                "image": "@ADDONS_PATH@/techm4/components/_images/background2.jpg",
+                "active": false,
+                "showButtons": true,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "alt": "",
+                "title": "",
+                "textTitle": "Video slide",
+                "overlay": true,
+                "contentAlign": "left",
+                "text": "Slide met Youtube video-achtergrond en dekkleur. Titel en tekst worden links uitgelijnd.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+              },
+              {
+                "image": "@ADDONS_PATH@/techm4/components/_images/background3.jpg",
+                "active": false,
+                "showButtons": true,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "alt": "",
+                "title": "",
+                "textTitle": "AFBEELDING SLIDE",
+                "overlay": true,
+                "contentAlign": "right",
+                "text": "Kies uit de grote selectie aan kant en klaar blocks - jumbotrons, hero afbeeldingen, parallax scrolling, video, achtergronden, hamburger menu enz...",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+              }
+            ]
+          },
+          "_anchor": "slider01-2r"
+        },
+        {
+          "_name": "slider1",
+          "_sourceTheme": "agencym4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider1 agencym4_slider1 carousel slide\" group=\"Sliders & Gallery\"\n\tplugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\" data-bs-interval=\"false\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"carousel\" title=\"Slides\" name=\"slides\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded></div>\n\n</section>",
+          "_styles": {
+            ".modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".modal-body .close span": {
+              "font-style": "normal"
+            },
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "flex"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".boxed-slider": {
+              "position": "relative",
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)"
+            },
+            ".container-slide.container": {
+              "width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "opacity": "1"
+            },
+            ".carousel-item.active.right, .carousel-item.next": {
+              "left": "0",
+              "transition": "opacity 0.7s ease-in-out",
+              "opacity": "0"
+            },
+            ".carousel-item.active.left, .carousel-item.prev": {
+              "left": "0",
+              "transition": "opacity 0.7s ease-in-out",
+              "opacity": "0"
+            },
+            ".carousel-item.active, .carousel-item.next.left, .carousel-item.prev.right": {
+              "left": "0",
+              "opacity": "1"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "70px",
+                "height": "70px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "z-index": "11",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "2rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "20px",
+                  "width": "20px",
+                  "height": "20px",
+                  "max-height": "20px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "2px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
+                "padding": "0"
+              }
+            },
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "min-height": "0"
+            },
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "min-width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
+            },
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            },
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
+            }
+          },
+          "_cid": "uHoYKwgpBa",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "slides__autoplay": "false",
+            "slides__autoplayInterval": 4000,
+            "slides__showBullets": true,
+            "slides": [
+              {
+                "image": "@ADDONS_PATH@/agencym4/components/_images/background1.jpg",
+                "active": true,
+                "showButtons": true,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "alt": "",
+                "title": "",
+                "textTitle": "SLIDER Volledig scherm",
+                "overlay": true,
+                "contentAlign": "center",
+                "text": "Kies uit de grote selectie aan kant en klaar blocks - jumbotrons, hero afbeeldingen, parallax scrolling, video, achtergronden, hamburger menu enz...",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+              },
+              {
+                "image": "@ADDONS_PATH@/agencym4/components/_images/background2.jpg",
+                "active": false,
+                "showButtons": true,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "alt": "",
+                "title": "",
+                "textTitle": "Video slide",
+                "overlay": true,
+                "contentAlign": "left",
+                "text": "Slide met Youtube video-achtergrond en dekkleur. Titel en tekst worden links uitgelijnd.",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+              },
+              {
+                "image": "@ADDONS_PATH@/agencym4/components/_images/background3.jpg",
+                "active": false,
+                "showButtons": true,
+                "showText": true,
+                "showTitle": true,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "alt": "",
+                "title": "",
+                "textTitle": "AFBEELDING SLIDE",
+                "overlay": true,
+                "contentAlign": "right",
+                "text": "Kies uit de grote selectie aan kant en klaar blocks - jumbotrons, hero afbeeldingen, parallax scrolling, video, achtergronden, hamburger menu enz...",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+              }
+            ]
+          },
+          "_anchor": "slider1-2s"
         },
         {
           "alias": false,
