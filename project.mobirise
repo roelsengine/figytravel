@@ -826,9 +826,72 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "display": "flex",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (min-width: 768px)": {
+              "align-items": "~\"@{verticalAlign}\"",
+              ".row": {
+                "justify-content": "~\"@{horizontalAlign}\""
+              },
+              ".content-wrap": {
+                "padding": "1rem 3rem"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".content-wrap": {
+                "min-width": "50%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "-webkit-align-items": "center",
+              "align-items": "~\"@{verticalAlign}\"",
+              ".mbr-row": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              },
+              ".content-wrap": {
+                "width": "100%"
+              }
+            },
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "header17",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header16\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"24\" step=\"1\" value=\"20\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"3\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show / Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n      <option value=\"flex-start\">Top</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Bottom</option>\n    </select>\n    <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n      <option value=\"flex-start\">Left</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-600x400.jpg\" parallax selected>\n      <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\">\n      <input type=\"color\" title=\"Color\" value=\"#260a30\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\">\n      <div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Volunteers Tanzania Mwanza</b></h1>\n        <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n          Header Subtitle\n        </h2>\n        <p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Charity volunteers internships Agriculture,Teaching,Healthcare</b></p>\n        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Volunteer Agriculture</a> <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Volunteer Teaching</a> <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Volunteer Healthcare</a></div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uGUkwZWxZA",
+          "_anchor": "header17-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "_name": "slider01",
           "_sourceTheme": "techm4",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"carousel slide\" group=\"Sliders &amp; Gallery\"\n    plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe,mobirise-icons2\" data-interval=\"false\" data-bs-interval=\"false\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded=\"\"></div>\n\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe,mobirise-icons2\" data-interval=\"false\" data-bs-interval=\"false\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded></div>\n\n</section>",
           "_styles": {
             ".modal-body .close": {
               "background": "#1b1b1b"
@@ -1114,8 +1177,8 @@
             "slides__showBullets": true,
             "slides": [
               {
-                "image": "@ADDONS_PATH@/techm4/components/_images/background1.jpg",
-                "active": false,
+                "image": "@PROJECT_PATH@/assets/images/volunteers-tanzania-cheeta-1920x1280.jpg",
+                "active": true,
                 "showButtons": true,
                 "showText": true,
                 "showTitle": true,
@@ -1133,7 +1196,7 @@
                 "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
               },
               {
-                "image": "@ADDONS_PATH@/techm4/components/_images/background2.jpg",
+                "image": "@THEME_PATH@/components/_images/background16.jpg",
                 "active": false,
                 "showButtons": true,
                 "showText": true,
@@ -1149,11 +1212,12 @@
                 "overlay": true,
                 "contentAlign": "left",
                 "text": "Slide met Youtube video-achtergrond en dekkleur. Titel en tekst worden links uitgelijnd.",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>",
+                "overlayOpacity": "0.1"
               },
               {
-                "image": "@ADDONS_PATH@/techm4/components/_images/background3.jpg",
-                "active": true,
+                "image": "@PROJECT_PATH@/assets/images/mbr-600x400.jpg",
+                "active": false,
                 "showButtons": true,
                 "showText": true,
                 "showTitle": true,
@@ -1168,74 +1232,12 @@
                 "overlay": true,
                 "contentAlign": "right",
                 "text": "Kies uit de grote selectie aan kant en klaar blocks - jumbotrons, hero afbeeldingen, parallax scrolling, video, achtergronden, hamburger menu enz...",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>"
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">VOOR MAC</a>",
+                "overlayOpacity": "0.1"
               }
             ]
           },
           "_anchor": "slider01-2r"
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "display": "flex",
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (min-width: 768px)": {
-              "align-items": "~\"@{verticalAlign}\"",
-              ".row": {
-                "justify-content": "~\"@{horizontalAlign}\""
-              },
-              ".content-wrap": {
-                "padding": "1rem 3rem"
-              }
-            },
-            "@media (max-width: 991px) and (min-width: 768px)": {
-              ".content-wrap": {
-                "min-width": "50%"
-              }
-            },
-            "@media (max-width: 767px)": {
-              "-webkit-align-items": "center",
-              "align-items": "~\"@{verticalAlign}\"",
-              ".mbr-row": {
-                "-webkit-justify-content": "center",
-                "justify-content": "center"
-              },
-              ".content-wrap": {
-                "width": "100%"
-              }
-            },
-            ".mbr-section-title, .mbr-section-subtitle": {
-              "text-align": "center"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "text-align": "center"
-            },
-            ".mbr-section-title": {
-              "text-align": "center"
-            }
-          },
-          "_name": "header17",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header16\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"24\" step=\"1\" value=\"20\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"3\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show / Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n      <option value=\"flex-start\">Top</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Bottom</option>\n    </select>\n    <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n      <option value=\"flex-start\">Left</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-600x400.jpg\" parallax selected>\n      <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\">\n      <input type=\"color\" title=\"Color\" value=\"#260a30\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\">\n      <div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Volunteers Tanzania Mwanza</b></h1>\n        <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n          Header Subtitle\n        </h2>\n        <p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Charity volunteers internships Agriculture,Teaching,Healthcare</b></p>\n        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-danger\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Volunteer Agriculture</a> <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Volunteer Teaching</a> <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Volunteer Healthcare</a></div>\n      </div>\n    </div>\n  </div>\n</section>",
-          "_cid": "uGUkwZWxZA",
-          "_anchor": "header17-1",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
         },
         {
           "_name": "slider1",
