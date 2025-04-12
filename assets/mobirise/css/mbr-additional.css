@@ -10559,7 +10559,7 @@ a {
 }
 .cid-uI4UW6LgYI .mbr-desc {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 .cid-uI4UW6LgYI .mbr-section-title,
 .cid-uI4UW6LgYI .mbr-section-btn {
@@ -10674,14 +10674,6 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-uI4Z9EAOt6 .container-fluid {
-  padding: 0 40px;
-}
-@media (max-width: 992px) {
-  .cid-uI4Z9EAOt6 .container-fluid {
-    padding: 0 24px;
-  }
-}
 @media (max-width: 992px) {
   .cid-uI4Z9EAOt6 .container {
     padding: 0 24px;
@@ -10730,13 +10722,15 @@ a {
 .cid-uI4Z9EAOt6 .mbr-text,
 .cid-uI4Z9EAOt6 .text-wrap {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 .cid-uI4Z9EAOt6 .mbr-section-title,
 .cid-uI4Z9EAOt6 .icon-wrapper {
-  text-align: center;
+  text-align: left;
 }
 .cid-uI4ZaqEA4A {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   overflow: hidden;
   background-color: #202020;
 }
@@ -10800,11 +10794,11 @@ a {
 .cid-uI4ZaqEA4A .mbr-text,
 .cid-uI4ZaqEA4A .text-wrap {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
 }
 .cid-uI4ZaqEA4A .mbr-section-title,
 .cid-uI4ZaqEA4A .icon-wrapper {
-  text-align: center;
+  text-align: left;
 }
 .cid-uI8DdVfSbD {
   padding-top: 0rem;
@@ -10880,4 +10874,48 @@ a {
   .cid-uI8DdVfSbD .item-wrapper {
     padding: 2rem 1.5rem;
   }
+}
+.cid-uI8HjcQKQ1 {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #ffffff;
+}
+.cid-uI8HjcQKQ1 .mbr-text {
+  color: #000000;
+}
+.cid-uI8HjcQKQ1 .mbr-section-subtitle {
+  color: #000000;
+}
+.cid-uI8Hkcuwo5 {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-uI8Hkcuwo5 .counter-container ol {
+  margin-bottom: 0;
+  padding-left: 2.25rem;
+  counter-reset: myCounter;
+}
+.cid-uI8Hkcuwo5 .counter-container ol li {
+  margin-bottom: 2rem;
+  list-style: none;
+  position: relative;
+}
+.cid-uI8Hkcuwo5 .counter-container ol li:before {
+  font-weight: 700;
+  position: absolute;
+  left: -1.5em;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  transition: all .2s;
+  color: #9fe870;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cid-uI8Hkcuwo5 .mbr-section-title {
+  text-align: center;
+}
+.cid-uI8Hkcuwo5 .mbr-section-subtitle {
+  text-align: center;
 }
