@@ -1613,9 +1613,7 @@ a {
   z-index: auto;
 }
 .cid-uIbdokBLpW {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .cid-uIbdokBLpW .mbr-fallback-image.disabled {
   display: none;
@@ -1628,6 +1626,9 @@ a {
   height: 100%;
   position: absolute;
   top: 0;
+}
+.cid-uIbdokBLpW .mbr-section-title {
+  color: #f7f7f7;
 }
 .cid-uHejbVL2Aw {
   padding-top: 2rem;
