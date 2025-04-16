@@ -1,13 +1,13 @@
 {
   "settings": {
     "name": "figy.travel",
-    "currentPage": "page3.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
       "titlePreset": "StartM5",
       "styling": {
-        "primaryColor": "#0088ff",
+        "primaryColor": "#ffffff",
         "secondaryColor": "#f80768",
         "successColor": "#64ff00",
         "infoColor": "#ffa600",
@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 181,
+    "uniqCompNum": 182,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true
@@ -1153,7 +1153,7 @@
                 "overlay": true,
                 "contentAlign": "center",
                 "text": "<b>Join fellow international volunteers and make a positive impact on a unique and unforgettable trip.</b>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary display-4\" data-app-placeholder=\"Type Text\" href=\"index.html#people02-k\" data-toolbar=\"-mbrBtnMove\">See what other volunteers internships say</a> ",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-success\" data-app-placeholder=\"Type Text\" href=\"index.html#people02-k\" data-toolbar=\"-mbrBtnMove\">See what other volunteers internships say</a> ",
                 "overlayOpacity": "0.2"
               },
               {
@@ -1173,7 +1173,7 @@
                 "overlay": true,
                 "contentAlign": "center",
                 "text": "<b>Work to improve the community and visit paradise on earth</b>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-warning\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">See programs</a> ",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-success\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">See programs</a> ",
                 "overlayOpacity": "0.3"
               }
             ]
