@@ -1118,7 +1118,7 @@
             "slides": [
               {
                 "image": "@PROJECT_PATH@/assets/images/volunteers-tanzania-cheeta-1920x1280.webp",
-                "active": false,
+                "active": true,
                 "showButtons": true,
                 "showText": true,
                 "showTitle": true,
@@ -1134,7 +1134,7 @@
                 "contentAlign": "center",
                 "text": "<b>Work as a volunteer or an intership in tanzania mwanza</b>",
                 "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-primary\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">Volunteer Agriculture</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-danger\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\"><span class=\"mobi-mbri mobi-mbri-photos mbr-iconfont mbr-iconfont-btn\"></span>Volunteer Teaching Education</a> <a data-app-btn=\"true\" class=\"btn display-4 btn-warning\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">Volunteer Healthcare</a> ",
-                "overlayOpacity": "0.2"
+                "overlayOpacity": "0.3"
               },
               {
                 "image": "@PROJECT_PATH@/assets/images/mbr-1920x1080.webp",
@@ -1158,7 +1158,7 @@
               },
               {
                 "image": "@PROJECT_PATH@/assets/images/mbr-600x400.webp",
-                "active": true,
+                "active": false,
                 "showButtons": true,
                 "showText": true,
                 "showTitle": true,
@@ -1174,7 +1174,7 @@
                 "contentAlign": "center",
                 "text": "<b>Work to improve the community and visit paradise on earth</b>",
                 "buttons": "<a data-app-btn=\"true\" class=\"btn display-4 btn-warning\" data-app-placeholder=\"Type Text\" href=\"index.html#news09-8\" data-toolbar=\"-mbrBtnMove\">See programs</a> ",
-                "overlayOpacity": "0.1"
+                "overlayOpacity": "0.3"
               }
             ]
           }
