@@ -1798,7 +1798,7 @@ a {
 .cid-uGVNRMDh5u {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #ffffff;
+  background-color: #0c2c68;
 }
 .cid-uGVNRMDh5u .mbr-fallback-image.disabled {
   display: none;
@@ -1849,6 +1849,12 @@ a {
 }
 .cid-uGVNRMDh5u .content-head {
   max-width: 800px;
+}
+.cid-uGVNRMDh5u .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-uGVNRMDh5u .mbr-section-title {
+  color: #ffffff;
 }
 .cid-uH88IF2iFi {
   padding-top: 1rem;
