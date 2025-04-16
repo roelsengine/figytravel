@@ -11653,7 +11653,7 @@ a {
 .cid-uIxps6fpkA .mbr-text,
 .cid-uIxps6fpkA .text-wrapper {
   color: #232323;
-  text-align: left;
+  text-align: center;
 }
 .cid-uIxps6fpkA .mbr-section-title,
 .cid-uIxps6fpkA .mbr-section-btn {
@@ -11766,7 +11766,7 @@ a {
 .cid-uIxqQOtpvC .mbr-text,
 .cid-uIxqQOtpvC .text-wrapper {
   color: #232323;
-  text-align: left;
+  text-align: center;
 }
 .cid-uIxqQOtpvC .mbr-section-title,
 .cid-uIxqQOtpvC .mbr-section-btn {
@@ -11862,6 +11862,83 @@ a {
 }
 .cid-uIxm6FFimO .mbr-section-subtitle {
   text-align: center;
+}
+.cid-uIxsmNsIYl {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffffff;
+}
+.cid-uIxsmNsIYl .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uIxsmNsIYl .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uIxsmNsIYl .mbr-text {
+  color: #000000;
+}
+.cid-uIxsmNsIYl .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-uIxsmNsIYl .item-wrapper {
+  background: #ffffff;
+  padding: 2.25rem 2.25rem 1rem 2.25rem;
+}
+@media (max-width: 767px) {
+  .cid-uIxsmNsIYl .item-wrapper {
+    padding: 2rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cid-uIxsmNsIYl .item-wrapper {
+    padding: 2rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+.cid-uIxsmNsIYl .main-button {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .cid-uIxsmNsIYl .main-button {
+    margin-bottom: 2rem;
+  }
+}
+.cid-uIxsmNsIYl .counter-container ul {
+  margin: 0;
+  padding-left: 2.25rem;
+  list-style: none;
+}
+.cid-uIxsmNsIYl .counter-container ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.cid-uIxsmNsIYl .counter-container ul li:before {
+  position: absolute;
+  left: -1.5em;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9fe870;
+  background-color: #9fe870;
+  width: 0.5em;
+  height: 0.5em;
+  top: 0.4em;
+  border-radius: 50%;
+}
+.cid-uIxsmNsIYl .mbr-text UL {
+  text-align: left;
+}
+.cid-uIxsmNsIYl .mbr-section-subtitle,
+.cid-uIxsmNsIYl .main-button {
+  color: #000000;
 }
 .cid-uIxjcTR1EH {
   z-index: 1000;
