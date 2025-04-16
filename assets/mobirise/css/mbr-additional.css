@@ -1615,8 +1615,6 @@ a {
   color: #a6a99c;
 }
 .cid-uGUkMr5nN2 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   background-color: #ffffff;
 }
 .cid-uGUkMr5nN2 .mbr-fallback-image.disabled {
@@ -1849,90 +1847,6 @@ a {
 }
 .cid-uGVNRMDh5u .content-head {
   max-width: 800px;
-}
-#custom-html-3i {
-  /*
- * Globals
- */
-  /* Custom default button */
-  /*
- * Base structure
- */
-  /*
- * Header
- */
-  line-height: 1.9;
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  box-sizing: border-box;
-  margin: 0;
-  font-family: var(--bs-font-sans-serif);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  display: flex!important;
-  height: 100%!important;
-  text-align: center!important;
-  color: #fff!important;
-  background-color: #212529!important;
-}
-#custom-html-3i .btn-secondary,
-#custom-html-3i .btn-secondary:hover,
-#custom-html-3i .btn-secondary:focus {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-}
-#custom-html-3i body {
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-}
-#custom-html-3i .cover-container {
-  max-width: 42em;
-}
-#custom-html-3i .nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-#custom-html-3i .nav-masthead .nav-link:hover,
-#custom-html-3i .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
-}
-#custom-html-3i .nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-#custom-html-3i .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
 }
 .cid-uH88IF2iFi {
   padding-top: 1rem;
@@ -2381,58 +2295,6 @@ a {
     margin-bottom: 1rem;
   }
 }
-.cid-uIb26PJno0 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-uIb26PJno0 .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uIb26PJno0 .item-wrapper {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-@media (max-width: 767px) {
-  .cid-uIb26PJno0 .item-wrapper {
-    margin-bottom: 1rem;
-  }
-}
-.cid-uIb26PJno0 .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uIb26PJno0 .mbr-iconfont {
-  display: inline-flex;
-  font-size: 2rem;
-  color: #d70081;
-  width: 80px;
-  justify-content: center;
-  align-items: center;
-  background: #ffd7ef;
-  height: 80px;
-  border-radius: 50%;
-}
-.cid-uIb26PJno0 .card-title,
-.cid-uIb26PJno0 .iconfont-wrapper,
-.cid-uIb26PJno0 .card-text {
-  color: #000000;
-  text-align: center;
-}
-.cid-uIb26PJno0 .content-head {
-  max-width: 800px;
-}
-.cid-uIb26PJno0 .mbr-section-title {
-  color: #000000;
-}
-.cid-uIb26PJno0 .mbr-section-btn {
-  text-align: center;
-}
 .cid-uIb11NXTdO {
   padding-top: 1rem;
   padding-bottom: 0rem;
@@ -2492,105 +2354,6 @@ a {
 .cid-uIb11NXTdO [class*=" socicon-"]:before {
   line-height: 55px;
   padding: .6rem;
-}
-.cid-uIb2ybRj0j {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #fffff5;
-}
-.cid-uIb2ybRj0j .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uIb2ybRj0j .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.cid-uIb2ybRj0j .title-wrapper .mbr-section-title {
-  margin-bottom: 64px;
-}
-@media (max-width: 992px) {
-  .cid-uIb2ybRj0j .title-wrapper .mbr-section-title {
-    margin-bottom: 32px;
-  }
-}
-.cid-uIb2ybRj0j .items-wrap {
-  justify-content: center;
-  margin: 0 -10px;
-}
-.cid-uIb2ybRj0j .items-wrap .item {
-  padding: 0 10px;
-  margin-bottom: 32px;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .item-title {
-  margin-bottom: 0.5rem;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .item-desc {
-  margin-bottom: 1rem;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card-box {
-  border: 2px solid #000;
-  padding: 42px 28px;
-  min-height: 470px;
-}
-@media (max-width: 992px) {
-  .cid-uIb2ybRj0j .item .item-wrapper .card-box {
-    padding: 36px 24px;
-    min-height: auto;
-  }
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card-box .icon-wrap {
-  margin-bottom: 16px;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card-box .icon-wrap .mbr-iconfont {
-  width: 70px;
-  height: 70px;
-  font-size: 70px;
-  display: inline-flex;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card-box .item-text_1,
-.cid-uIb2ybRj0j .item .item-wrapper .card-box .item-text_2 {
-  margin-bottom: 0;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card_1 {
-  background-color: #000000;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card_1 .icon-wrap .mbr-iconfont {
-  color: #fffff5;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card_2 {
-  background-color: #bff747;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card_2 .icon-wrap .mbr-iconfont {
-  color: #000000;
-}
-.cid-uIb2ybRj0j .item .item-wrapper .card {
-  justify-content: center;
-}
-.cid-uIb2ybRj0j .mbr-section-btn {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-.cid-uIb2ybRj0j .item-title {
-  color: #000000;
-}
-.cid-uIb2ybRj0j .item-desc {
-  color: #000000;
-}
-.cid-uIb2ybRj0j .item-text_1 {
-  color: #fdfde1;
-}
-.cid-uIb2ybRj0j .item-text_2 {
-  color: #000000;
-  text-align: center;
-}
-.cid-uIb2ybRj0j .item-text_1,
-.cid-uIb2ybRj0j .icon-wrap {
-  text-align: center;
 }
 .cid-uHesuZz5Da {
   z-index: 1000;
