@@ -3789,6 +3789,18 @@ a {
   font-size: 10px;
   color: #777;
 }
+#custom-html-60 {
+  /* Type valid CSS here */
+}
+#custom-html-60 div {
+  padding: 80px 0;
+  color: #777;
+  text-align: center;
+}
+#custom-html-60 p {
+  font-size: 22px;
+  color: #777;
+}
 #custom-html-5s {
   /* Type valid CSS here */
   /**/
@@ -3799,7 +3811,7 @@ a {
   text-align: left;
 }
 #custom-html-5s p {
-  font-size: 60px;
+  font-size: 20px;
   color: #777;
 }
 #custom-html-5y {
