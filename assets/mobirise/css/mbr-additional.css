@@ -3746,8 +3746,8 @@ a {
   text-align: center;
 }
 .cid-uJnYH9Hbcl {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   background-color: #ffffff;
 }
 .cid-uJnYH9Hbcl .mbr-fallback-image.disabled {
@@ -3770,7 +3770,7 @@ a {
   color: #000000;
 }
 #custom-html-5p div {
-  padding: 80px 0 0 80px;
+  padding: 20px 80px 20px 80px ;
   color: #777;
 }
 #custom-html-5p p {
