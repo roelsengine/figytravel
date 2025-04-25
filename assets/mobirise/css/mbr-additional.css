@@ -3779,15 +3779,16 @@ a {
 }
 #custom-html-5s {
   /* Type valid CSS here */
-}
-#custom-html-5s div {
+  /*div {
   padding: 80px 0;
   color: #777;
   text-align: center;
 }
-#custom-html-5s p {
+p {
   font-size: 60px;
   color: #777;
+}
+*/
 }
 #custom-html-5q div {
   padding: 20px 10% 20px 10% ;
