@@ -4166,9 +4166,10 @@ a {
   /* Type valid CSS here */
 }
 #custom-html-5g div {
-  padding: 80px 0;
+  padding: 0px 0;
   color: #777;
   text-align: center;
+  background: #fff;
 }
 #custom-html-5g p {
   font-size: 60px;
