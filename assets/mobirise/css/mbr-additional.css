@@ -3778,16 +3778,42 @@ a {
   color: #777;
 }
 #custom-html-5q {
-  /* Type valid CSS here */
-}
-#custom-html-5q div {
-  padding: 80px 0;
-  color: #777;
-  text-align: center;
-}
-#custom-html-5q p {
-  font-size: 60px;
-  color: #777;
+  -webkit-text-size-adjust: 100%;
+  --neutral-600: #5d6a6a;
+  --neutral-800: #19474e;
+  --primary-1: #41c67e;
+  --secondary-2: #1a6855;
+  --neutral-100: white;
+  --footer: #444418;
+  --secondary-1: #ebf3ec;
+  --secondary-3: #daf3e6;
+  --secondary-4: #142a31;
+  --neutral-700: #435655;
+  --neutral-500: #a1b3b2;
+  --neutral-400: #dae5e4;
+  --neutral-300: #edf6f6;
+  --neutral-200: #f7f7f7;
+  --shadow-short-card: #080f340a;
+  --primary-1-manon: #1eb53a;
+  --manon-primary-1-hover: #199d31;
+  --shadow-default-button-white: #253f4112;
+  --manon-primary-blauw: #00a3dd;
+  --header-colour: #08260c;
+  --submenu-typography-colour: #3a3a3a;
+  --primary-2: #f66688;
+  --secondary-1-2: #f3efeb;
+  --correct-header--footer: #2d1a12;
+  color: var(--neutral-600);
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+  line-height: 1.667em;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 95px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
 }
 .cid-uJnmKpAJne {
   padding-top: 0rem;
