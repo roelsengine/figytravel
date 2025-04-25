@@ -2483,6 +2483,19 @@ a {
     margin-bottom: 1rem;
   }
 }
+#custom-html-5h {
+  /* Type valid CSS here */
+}
+#custom-html-5h div {
+  padding: 0px 0;
+  color: #777;
+  text-align: center;
+  background: transparent;
+}
+#custom-html-5h p {
+  font-size: 30px;
+  color: #777;
+}
 .cid-uIb11NXTdO {
   padding-top: 1rem;
   padding-bottom: 0rem;
@@ -4169,10 +4182,10 @@ a {
   padding: 0px 0;
   color: #777;
   text-align: center;
-  background: #fff;
+  background: #000;
 }
 #custom-html-5g p {
-  font-size: 60px;
+  font-size: 30px;
   color: #777;
 }
 .cid-uIxv1fMkZv {
