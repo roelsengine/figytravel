@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 207,
+    "uniqCompNum": 208,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true
@@ -4258,7 +4258,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div>\n<table class=\"table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">#</th>\n      <th scope=\"col\">Program fee</th>\n      <th scope=\"col\">Per day</th>\n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">1 week</th>\n      <td>€ 343</td>\n      <td>€ 49/day</td>\n      \n    </tr>\n    <tr>\n      <th scope=\"row\">2 weeks</th>\n      <td>€ 686</td>\n      <td>€ 49/day</td>\n      \n    </tr>\n    <tr>\n      <th scope=\"row\">4 weeks</th>\n      <td>€ 1.344</td>\n      <td>€ 48/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">6 weeks</th>\n      <td>€ 1.974</td>\n    <td>€ 47/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">8 weeks</th>\n      <td>€ 2.576</td>\n      <td>€ 46/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">10 weeks</th>\n      <td>€ 3.150</td>\n      <td>€ 45/day</td>\n      \n    </tr>\n        <tr>\n      <th scope=\"row\">12 weeks</th>\n      <td>€ 3.780</td>\n      <td>€ 45/day</td>\n      \n    </tr>\n  </tbody>\n</table>\n</div>",
-          "_customCSS": "\ndiv {\n  padding:20px 20% 20px 20% ;\n  color: #777;\n  //text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "_customCSS": "\ndiv {\n  padding:20px 10% 20px 10% ;\n  color: #777;\n  //text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -4272,8 +4272,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<div class=\"split-content-wrapper\"><div data-w-id=\"a30aef23-c1c2-f63d-836e-0256e1158b82\" style=\"transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;\" class=\"split-content perks-left included included-excluded\"><h4 class=\"included-header\"><span class=\"text-span-10\">Included</span> in the price</h4><ul role=\"list\" class=\"list-2\"><li class=\"list-item-2\">3 nice meals per day<br></li><li>Accommodation<br>+ all MLVF&nbsp;facilities</li><li> Transport from and to<br>Mwanza Airport</li><li>Wi-fi</li><li>24/7 in-country support</li><li>Room cleaning</li><li>Laundry service</li><li>Bikes</li><li>Particular add-ons / <br>activities</li></ul></div><div data-w-id=\"d61b380e-1c25-5ba2-34f1-5e48784fff91\" style=\"transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;\" class=\"split-content perks-left excluded included-excluded\"><h4 class=\"excluded-header\"><span class=\"text-span-11\">Excluded</span> in the price</h4><ul role=\"list\" class=\"list-3\"><li>Flight ticket<br></li><li>VISA costs</li><li>Vaccination(s)</li><li>Malaria Medication</li><li>Tips or souvenirs</li><li>Alcoholic beverages</li><li>Taxi service/public transport</li><li>Personal guides</li><li>Add-ons such as Safari / Zanzibar (with exception of optional activities mentioned)</li></ul></div></div>",
-          "_customCSS": "    -webkit-text-size-adjust: 100%;\n    --neutral-600: #5d6a6a;\n    --neutral-800: #19474e;\n    --primary-1: #41c67e;\n    --secondary-2: #1a6855;\n    --neutral-100: white;\n    --footer: #444418;\n    --secondary-1: #ebf3ec;\n    --secondary-3: #daf3e6;\n    --secondary-4: #142a31;\n    --neutral-700: #435655;\n    --neutral-500: #a1b3b2;\n    --neutral-400: #dae5e4;\n    --neutral-300: #edf6f6;\n    --neutral-200: #f7f7f7;\n    --shadow-short-card: #080f340a;\n    --primary-1-manon: #1eb53a;\n    --manon-primary-1-hover: #199d31;\n    --shadow-default-button-white: #253f4112;\n    --manon-primary-blauw: #00a3dd;\n    --header-colour: #08260c;\n    --submenu-typography-colour: #3a3a3a;\n    --primary-2: #f66688;\n    --secondary-1-2: #f3efeb;\n    --correct-header--footer: #2d1a12;\n    color: var(--neutral-600);\n    font-family: DM Sans, sans-serif;\n    font-size: 18px;\n    line-height: 1.667em;\n    box-sizing: border-box;\n    justify-content: space-between;\n    align-items: center;\n    margin-left: 95px;\n    padding-top: 20px;\n    padding-bottom: 20px;\n    display: flex;",
+          "_customHTML": "<h4 class=\"included-header\"><span class=\"text-span-10\">Included</span> in the price</h4><ul role=\"list\" class=\"list-2\"><li class=\"list-item-2\">3 nice meals per day<br></li><li>Accommodation<br>+ all MLVF&nbsp;facilities</li><li> Transport from and to<br>Mwanza Airport</li><li>Wi-fi</li><li>24/7 in-country support</li><li>Room cleaning</li><li>Laundry service</li><li>Bikes</li><li>Particular add-ons / <br>activities</li></ul>\n\n<h4 class=\"excluded-header\"><span class=\"text-span-11\">Excluded</span> in the price</h4><ul role=\"list\" class=\"list-3\"><li>Flight ticket<br></li><li>VISA costs</li><li>Vaccination(s)</li><li>Malaria Medication</li><li>Tips or souvenirs</li><li>Alcoholic beverages</li><li>Taxi service/public transport</li><li>Personal guides</li><li>Add-ons such as Safari / Zanzibar (with exception of optional activities mentioned)</li></ul>",
+          "_customCSS": "\ndiv {\n  padding:20px 10% 20px 10% ;\n  color: #777;\n  //text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}\n\n",
           "alias": "code-editor",
           "_tags": [
             "Extension"
