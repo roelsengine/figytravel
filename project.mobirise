@@ -4258,7 +4258,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div>\n<table class=\"table\">\n  <thead>\n    <tr>\n      <th scope=\"col\">#</th>\n      <th scope=\"col\">Program fee</th>\n      <th scope=\"col\">Per day</th>\n      \n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">1 week</th>\n      <td>€ 343</td>\n      <td>€ 49/day</td>\n      \n    </tr>\n    <tr>\n      <th scope=\"row\">2 weeks</th>\n      <td>€ 686</td>\n      <td>€ 49/day</td>\n      \n    </tr>\n    <tr>\n      <th scope=\"row\">4 weeks</th>\n      <td>€ 1.344</td>\n      <td>€ 48/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">6 weeks</th>\n      <td>€ 1.974</td>\n    <td>€ 47/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">8 weeks</th>\n      <td>€ 2.576</td>\n      <td>€ 46/day</td>\n      \n    </tr>\n      <tr>\n      <th scope=\"row\">10 weeks</th>\n      <td>€ 3.150</td>\n      <td>€ 45/day</td>\n      \n    </tr>\n        <tr>\n      <th scope=\"row\">12 weeks</th>\n      <td>€ 3.780</td>\n      <td>€ 45/day</td>\n      \n    </tr>\n  </tbody>\n</table>\n</div>",
-          "_customCSS": "\ndiv {\n  padding:20px 20% 20px 20% ;\n  color: #777;\n  //text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "_customCSS": "\ndiv {\n  padding:10px 20% 20px 10% ;\n  color: #777;\n  //text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
