@@ -2483,6 +2483,19 @@ a {
     margin-bottom: 1rem;
   }
 }
+#custom-html-5i {
+  /* Type valid CSS here */
+}
+#custom-html-5i div {
+  padding: 0px 0;
+  color: #777;
+  text-align: center;
+  background: #000;
+}
+#custom-html-5i p {
+  font-size: 30px;
+  color: #777;
+}
 #custom-html-5h {
   /* Type valid CSS here */
 }
