@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 214,
+    "uniqCompNum": 215,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false
@@ -4281,6 +4281,21 @@
           "_name": "pro.custom-html",
           "_sourceTheme": "startm5",
           "_anchor": "custom-html-5s",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div><ul class=\"list-group list-group-light \">\n  <li class=\"list-group-item active\">Included in price</li>\n  <li class=\"list-group-item\">3 nice meals per day</li>\n  <li class=\"list-group-item\">Accommodation + all MLVF facilities</li>\n  <li class=\"list-group-item\">Transport from and to Mwanza Airport</li>\n  <li class=\"list-group-item\">And a fifth one</li>\n    <li class=\"list-group-item\">Wi-fi</li>\n    <li class=\"list-group-item\">24/7 in-country support</li>\n    <li class=\"list-group-item\">Room cleaning</li>\n    <li class=\"list-group-item\">Laundry service</li>\n    <li class=\"list-group-item\">Bikes</li>\n    <li class=\"list-group-item\">Particular add-ons / activities</li>\n</ul>\n</div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 0 10% 0 10%;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}\n\n\n\n\n\n\n\n\n\n",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_anchor": "custom-html-5y",
           "_PHPplaceholders": [],
           "_JSplaceholders": []
         },
