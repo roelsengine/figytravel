@@ -62,7 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 215,
+    "uniqCompNum": 216,
     "versionPublish": "6.0.1",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false
@@ -4272,8 +4272,21 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<div>\n    <h1 class=\"display-1\">Custom HTML Block</h1>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"#777\" width=\"200\" height=\"200\"><path d=\"M6.1 8.7L2.8 12l3.3 3.3-1.4 1.4L0 12l4.7-4.7 1.4 1.4zm13.2-1.4l-1.4 1.4 3.3 3.3-3.3 3.3 1.4 1.4L24 12l-4.7-4.7zM8.1 18.6l1.8.8 6-14-1.8-.8-6 14z\"></path></svg>\n    <p class=\"display-3\">Click to Open Code Editor</p>\n</div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "startm5",
+          "_anchor": "custom-html-5z"
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
           "_customHTML": "<div class=\"d-flex flex-column flex-md-row p-4 gap-4 py-md-5  justify-content-center\">\n  <div class=\"list-group\">\n    <label class=\"list-group-item active d-flex gap-2\">\n        <span><strong>Included in price</strong>\n        <small class=\"d-block text-body-secondary\"></small>\n      </span>\n    </label>\n    <label class=\"list-group-item d-flex gap-2\">\n            <span>3 nice meals per day</span>\n    </label>\n    <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">Accommodation + all MLVF facilities</small>\n      </span>\n    </label>\n       <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">Transport from and to Mwanza Airport</small>\n      </span>\n    </label>\n       <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">Wi-fi</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">24/7 in-country support</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">Room cleaning</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">Laundry service</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">Bikes</small>\n      </span>\n    </label>\n      \n       <label class=\"list-group-item d-flex gap-2\">\n     <span>        \n        <small class=\"d-block text-body-secondary\">Particular add-ons / activities</small>\n      </span>\n    </label>\n            \n  </div>\n\n  <div class=\"list-group\">\n    <label class=\"list-group-item d-flex gap-2 active\">\n      \n        <span><strong>Excluded from price</strong> \n        \n      </span>\n    </label>\n    <label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Flight ticket</small>\n      </span>\n    </label>\n    <label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">VISA costs</small>\n      </span>\n    </label><label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Vaccination(s)</small>\n      </span>\n    </label><label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Malaria Medication</small>\n      </span>\n    </label><label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Tips or souvenirs</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Alcoholic beverages</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Taxi service/public transport</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Personal guides</small>\n      </span>\n    </label>\n      <label class=\"list-group-item d-flex gap-2\">\n      <span>\n        <small class=\"d-block text-body-secondary\">Add-ons such as Safari / <br>Zanzibar (with exception of optional<br> activities mentioned)</small>\n      </span>\n    </label>\n      \n  </div>\n</div>",
-          "_customCSS": "/* Type valid CSS here */\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}\n\n\n\n\n\n\n\n\n\n/**/",
+          "_customCSS": "/* Type valid CSS here */\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: left;\n}\np {\n  font-size: 60px;\n  color: #777;\n}\n\n\n\n\n\n\n\n\n\n/**/",
           "alias": "code-editor",
           "_tags": [
             "Extension"

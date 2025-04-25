@@ -3777,6 +3777,18 @@ a {
   font-size: 60px;
   color: #777;
 }
+#custom-html-5z {
+  /* Type valid CSS here */
+}
+#custom-html-5z div {
+  padding: 80px 0;
+  color: #777;
+  text-align: center;
+}
+#custom-html-5z p {
+  font-size: 60px;
+  color: #777;
+}
 #custom-html-5s {
   /* Type valid CSS here */
   /**/
@@ -3784,7 +3796,7 @@ a {
 #custom-html-5s div {
   padding: 80px 0;
   color: #777;
-  text-align: center;
+  text-align: left;
 }
 #custom-html-5s p {
   font-size: 60px;
