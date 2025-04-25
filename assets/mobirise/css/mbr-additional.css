@@ -3770,9 +3770,8 @@ a {
   color: #000000;
 }
 #custom-html-5p div {
-  padding: 80px 0;
+  padding: 80px 0 0 80px;
   color: #777;
-  text-align: center;
 }
 #custom-html-5p p {
   font-size: 60px;
